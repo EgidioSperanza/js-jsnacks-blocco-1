@@ -1,6 +1,6 @@
 const sendNumber = document.getElementById("sendNumber");
 const response = document.getElementById("response");
-
+const max = 50; //limite della somma degli inserimenti
 let listNum = [];
 let num;
 let sum;
@@ -23,16 +23,13 @@ sendNumber.addEventListener("click", () => {
       alert("Devi Inserire un numero quindi nessuna stringa o carattere.");
       console.log(num, sum);
     }
-    if (Number(sum) + Number(num) < 50) {
-      sum += Number(num);
-      listNum.push(Number(num));
-      console.log(num, sum);
-    } else {
+    sum += Number(num);
+    listNum.push(Number(num));
+    console.log(num, sum);
+    if (Number(sum) + Number(num) > max) {
       alert(
-        `Con quest'ultimo numero ${num} la somma dei tuoi inserimenti supera il 50`);
-      sum += Number(num);
-      listNum.push(Number(num));
-      console.log(num, sum);
+        `Con quest'ultimo numero la somma dei tuoi inserimenti supera il ${max}`
+      );
       break;
     }
   } while (Number(num) < 50 || sum < 50);
