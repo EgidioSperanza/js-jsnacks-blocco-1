@@ -9,7 +9,7 @@ sendNmax.addEventListener("click", () =>{
     }else{
         response.classList.add("container", "bg-dark", "bg-gradient", "text-white", "p-4", "mt-1");
         for(let i=1; i<=userN;i++){
-            response.innerHTML+=(`Il quadrato del numero ${i} è ${i**2} <hr />`);
+            response.innerHTML+=(`Il quadrato del numero ${i} è ${i**3} <hr />`);
             }
     }
 })
