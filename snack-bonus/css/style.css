@@ -1,0 +1,18 @@
+h3, .gold{
+    color: goldenrod;
+}
+
+form > *{
+    margin:0 12px;
+}
+
+::placeholder{
+    color: darkred;
+}
+
+@media screen and (max-width: 576px) {
+    form > *{
+        margin:12px;
+    }
+    
+}

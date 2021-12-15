@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BOOTSTRAP -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+    <!-- ----FONT AWESOME---- -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <!-- ----CSS---- -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container bg-dark bg-gradient text-white p-4 mt-5">
+      <title>Snack Bonus</title>
+      <h1>Snack Bonus - La successione di Fibonacci</h1>
+      <h3>La successione Aurea</h3>
+      <div class="row">
+        <div class="col-4">        
+          <p>F<sub>0</sub>=0</p>
+        </div>
+        <div class="col-4">        
+          <p>F<sub>1</sub>=1</p>
+        </div>
+        <div class="col-4">        
+          <p>F<sub>n</sub>=F<sub>n-1</sub>+F<sub>n-2</sub></p>
+        </div>
+        <div class="col-12 text-center gold">
+          <p>Inserisci un numero che non abbia più di 3 cifre e ti verrà restituita la successione di fibonacci fino a quel numero</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 offset-md-3">
+          <form action="post" id="fibonacci" name="fibonacci">
+            <label for="num">Inserisci un Intero</label>
+            <input id="num" type="text">
+            <input  type="button" id="sendNumber" value="Procedi con l'inserimento" class="btn btn-outline-success rounded-pill">
+          </form>
+        </div>
+        </div>
+      </div>
+    <div id="response">
+    </div>
+
+      <script src="./js/main.js"></script>
+  </body>
+</html>
