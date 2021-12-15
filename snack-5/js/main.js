@@ -28,7 +28,7 @@ sendNumber.addEventListener("click", () => {
     console.log(num, sum);
     if (Number(sum) + Number(num) > max) {
       alert(
-        `Con quest'ultimo numero la somma dei tuoi inserimenti supera il ${max}`
+        `Con quest'ultimo numero la somma dei tuoi inserimenti supera o è uguale al ${max}`
       );
       break;
     }
