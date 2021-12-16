@@ -26,18 +26,20 @@ sendNumber.addEventListener("click", () => {
     sum += Number(num);
     listNum.push(Number(num));
     console.log(num, sum);
-    if (Number(sum) + Number(num) > max) {
+    if (Number(sum) >= max) {
       alert(
         `Con quest'ultimo numero la somma dei tuoi inserimenti supera o è uguale al ${max}`
       );
       break;
     }
-  } while (Number(num) < 50 || sum < 50);
+  } while (Number(num) < 50 || Number(sum) < 50);
   {
     response.innerHTML += "Hai inserito i seguenti numeri:<hr />";
     for (let i = 0; i < listNum.length; i++) {
       response.innerHTML += `<span>${listNum[i]}</span>`;
     }
-    response.innerHTML += `<hr /><span>La loro somma è ${sum}</span>`;
+    response.innerHTML += `<hr /><span>La loro somma è ${sum}</span><hr />
+    Se non vuoi superare il 50 devi omettere il numero ${listNum[listNum.length-1]} ed avrai una somma di ${sum-listNum[listNum.length-1]}`;
   }
 });
+
