@@ -13,7 +13,7 @@ printPow.addEventListener("click", () => {
     "p-4",
     "mt-1"
   );
-  while (number ** exp < 1000) {
+  while (number ** exp < max) {
     response.innerHTML += `${number} elevato a ${exp} restituisce ${
       number ** exp
     }<hr />`;
