@@ -8,7 +8,7 @@ sendNumbers.addEventListener("click", () =>{
     for(let i=0; i<nQty;i++){
         const userInput= prompt("Inserisci un numero");
         if (isNaN(userInput)||userInput.length===0){
-            alert("Devi inserire dei umeri non sttinghe e/o caratteri");
+            alert("Devi inserire dei umeri non stringhe e/o caratteri");
             i--;
             userInput;
         }else{
